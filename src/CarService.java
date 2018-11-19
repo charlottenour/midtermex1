@@ -196,7 +196,8 @@ launch(args);
         getAllServiceMileages.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                actiontarget3.setText("All Services: "+serviceBook1.getAllServiceMileage());
+
+                actiontarget3.setText("All Servicemileages: "+serviceBook1.getAllServiceMileage());
 
 
             }
@@ -240,7 +241,11 @@ launch(args);
         isServiceOnDateButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                actiontarget5.setText("True/false? ");
+
+                if (datePicker.equals(serviceBook1))
+                actiontarget5.setText("True");
+                else
+                    actiontarget5.setText("There is no service on that date");
             }
         });
         grid.add(actiontarget5,0,16);

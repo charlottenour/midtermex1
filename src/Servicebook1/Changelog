@@ -1,0 +1,5 @@
+CHANGELOG FOR CARSERVICE:
+
+Changes in this version:
+
+Changed the functionality in the Carservice java.fx layout, now the calender actually adds the date into the servicebook.
